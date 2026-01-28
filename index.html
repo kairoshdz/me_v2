@@ -4,9 +4,23 @@
     <title>About Me</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            background-color: #0b49a8;
             line-height: 1.6;
+        }
+        .picture-of-me {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            margin: 15px auto;
+            margin-bottom: 2px;
+        }
+        .picture-of-halftime {
+            width: 500px;
+            height: auto;
+            border-radius: 10px;
+            margin: 15px auto;
+            margin-bottom: 2px;
         }
         .container {
             width: 80%;
@@ -14,42 +28,98 @@
             overflow: hidden;
         }
         .main-info {
-            background: #333;
-            color: #fff;
+            background: #0a67ae;
+            color: #ffffff;
             padding: 20px;
+            margin-bottom: 0;
         }
         .main-info h1 {
             margin: 0;
         }
-        .hobbies, .lewis, .course, .job {
-            background: #e7e7e7;
+        .contact-info {
+            color: #ffffff;
+            background: #bf0909;
+            padding: 7px;
+            padding-left: 20px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            line-height: 0.5;
+            font-size: smaller;
+            a {
+                color:deepskyblue
+            }
+        }
+        .hobbies, .lewis, .course, .job, .introduction, .fun-fact {
+            background: #0a67ae;
+            color: #ffffff;
             padding: 15px;
             margin-bottom: 10px;
         }
+        ul {
+            list-style-type: square;
+        }
+        a {
+                color:deepskyblue
+            }
     </style>
 </head>
 <body>
+    <section class="picture-of-me">
+        <a target="_blank" href="pictures/me-800-by-800.jpg">
+            <img src="pictures/me-300-by-300.jpg" alt="polaroid picture of me" class="picture-of-me">
+        </a>
+    </section>
+
     <div class="container">
         <header class="main-info">
-            <h1>[Erick "Kairos" Hernandez]</h1>
-            <h1>Preferred Name: [Erick/Kairos]</h1>
+            <h1>Erick “Kairos” Hernandez</h1>
+            <h1>Preferred Name: Erick/Kairos</h1>
         </header>
 
+        <section class="contact-info">
+            <h2>Discord: krs.hernandez</h2>
+            <h2>Email: 
+                <a href="mailto:erickdhernandez@lewisu.edu">ErickDHernandez@lewisu.edu</a></h2>
+        </section>
+
         <section class="lewis">
-			<h2>Year at Lewis: [Junior]</h2>
-			<h2>Lewis major/minor/concentrations: [Computer Science + Music]</h2>
-			<h2>Reasons for pursuing this degree: [I have a passion for music, it's my life. Also wanted to go deeper
-                into a STEM field.]</h2>
+			<h2>Year at Lewis: Junior</h2>
+			<h2>Lewis major/minor/concentrations: Computer Science + Music</h2>
+			<h2>Reasons for pursuing this degree: I have a passion for music, it's my life. Also wanted to go deeper
+                into a STEM field.</h2>
+        </section>
+        
+        <section class="introduction">
+            <h2>Introduction</h2>
+            <p>Hey, I'm Erick, I also go by Kairos; either one is fine. I'm currently a 
+                junior at Lewis and my major is computer science + music. Outside of school,
+                I am highly dedicated to music and have been very fortunate to be involved in
+                several different bands and ensembles. I mostly play guitar and have been
+                playing for almost six years now. I enjoy recording, producing, mixing and 
+                mastering as well as performing for audiences of varying sizes. I've
+                lived my whole life in Joliet, Illinois with my family and have tried my best
+                to be an active member in my city's community. I am also proud to call myself a
+                Gates and Hispanic Scholarship Fund Scholar. I'm excited to take this software
+                engineering course, finally getting some more hands-on experience and a chance to 
+                work on a programming project to add to my resume. 
+                </p>
         </section>
 
 		<section class="course">
-            <h2>Reasons for Taking This Course</h2>
-            <p>[I want to get started with actually developing software and working in a team to do so]</p>
+            <h2>What I Hope to Learn in this Course</h2>
+            <ul>
+                <li>Start developing meaningful software</li>
+                <li>Gain experience in working on a project collaboratively as a team</li>
+                <li>Learn how to navigate any problems that may occur on a schedule with a 
+                    set deadline</li>
+                <li>Learn more about opportunities and what I really want to do as a
+                    software developer in the future</li>
+            </ul>
         </section>
 
 		<section class="job">
-            <p>Current/Recent Job</p>
-			<p>[Several odd jobs, including]</p>
+            <h2>Current/Recent Job</h2>
+			<p>Several odd jobs, including</p>
             <ul>
                 <li>AI Trainer for Handshake</li>
                 <li>Musician, producer and audio engineer, doing live gigs and studio mixing</li>
@@ -60,13 +130,27 @@
         </section>		
 
         <section class="hobbies">
-            <h2>Hobbies and Special Interests</h2>
-            <p>[Music, sports, video games]</p>
+            <h2>My Favorite Hobbies/Activities</h2>
+            <ul>
+                <li>
+                    <a href="https://linktr.ee/kairos8ight" target="_blank">Making music, you can check out my stuff here</a>
+                </li>
+                <li>
+                    <a href="https://www.marvelrivals.com/" target="_blank">Marvel Rivals</a>
+                    </li>
+                <li>
+                    <a href="https://www.espn.com/" target="_blank">Sports (Soccer, Football, MMA)</a>
+                </li>
+            </ul>
         </section>
 
         <section class="fun-fact">
             <h2>Fun Fact</h2>
-            <p>[I performed at a halftime show for the Ohio State @ Illinois game back in October, here's a picture]</p>
+            <p>I performed at a halftime show for the Ohio State @ Illinois game back in October. It was my first major
+                sports event and it was completely sold out. Unfortunately, Illinois lost pretty badly. Still had a great time. Here's a picture.</p>
+            
+                <img src="pictures/halftime.JPG" alt="I'm in the back, to the right a bit" class="picture-of-halftime">
+        </a>
         </section>
     </div>
 </body>
