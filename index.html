@@ -1,12 +1,32 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 <head>
     <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Roboto, Arial, Helvetica, sans-serif;
             background-color: #0b49a8;
             line-height: 1.6;
+            overflow-wrap: break-word;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1, h2, p {
+            max-width: 100%;
+        }
+
+        a {
+            overflow-wrap: anywhere;
         }
         .picture-of-me {
             width: 150px;
@@ -61,6 +81,35 @@
         a {
                 color:deepskyblue
             }
+
+        @media (max-width: 600px) {
+            .container {
+                width: calc(100% - 24px);
+            }
+
+            .main-info,
+            .contact-info,
+            .hobbies, .lewis, .course, .job, .introduction, .fun-fact {
+                padding: 14px;
+            }
+
+            .main-info h1 {
+                font-size: 1.6rem;
+                overflow-wrap: anywhere;
+            }
+
+            .contact-info {
+                line-height: 1.3;
+            }
+
+            .contact-info h2 {
+                font-size: 1rem;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -73,7 +122,6 @@
     <div class="container">
         <header class="main-info">
             <h1>Erick “Kairos” Hernandez</h1>
-            <h1>Preferred Name: Erick/Kairos</h1>
         </header>
 
         <section class="contact-info">
@@ -83,7 +131,7 @@
         </section>
 
         <section class="lewis">
-			<h2>Year at Lewis: Junior</h2>
+			<h2>Year at Lewis: Senior</h2>
 			<h2>Lewis major/minor/concentrations: Computer Science + Music</h2>
 			<h2>Reasons for pursuing this degree: I have a passion for music, it's my life. Also wanted to go deeper
                 into a STEM field.</h2>
@@ -108,12 +156,10 @@
 		<section class="course">
             <h2>What I Hope to Learn in this Course</h2>
             <ul>
-                <li>Start developing meaningful software</li>
-                <li>Gain experience in working on a project collaboratively as a team</li>
-                <li>Learn how to navigate any problems that may occur on a schedule with a 
-                    set deadline</li>
-                <li>Learn more about opportunities and what I really want to do as a
-                    software developer in the future</li>
+                <li>Develop PitHub and get it to MVP status</li>
+                <li>Work along with my team to make Pithub fully functional and visually appealing</li>
+                <li>Attract a user base to PitHub</li>
+                <li>Gain more experience with programming</li>
             </ul>
         </section>
 
@@ -146,12 +192,13 @@
 
         <section class="fun-fact">
             <h2>Fun Fact</h2>
-            <p>I performed at a halftime show for the Ohio State @ Illinois game back in October. It was my first major
-                sports event and it was completely sold out. Unfortunately, Illinois lost pretty badly. Still had a great time. Here's a picture.</p>
-            
-                <img src="pictures/halftime.JPG" alt="I'm in the back, to the right a bit" class="picture-of-halftime">
-        </a>
+            <p>I released two songs over the summer, 'reputación' and 'verano eterno' give them a listen
+                by clicking  <a href="https://linktr.ee/kairos8ight" target="_blank" rel="noopener noreferrer">here</a>
+            </p>
         </section>
     </div>
+    <footer>    
+        <p>Last updated 26/08/2026</p>
+    </footer>
 </body>
 </html>
